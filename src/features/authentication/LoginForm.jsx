@@ -55,14 +55,13 @@ function LoginForm() {
         </FormRowVertical>
         <FormRowVertical>
           <Button size="large" disabled={isLoading}>
-            {!isLoading ? "Log in" : <SpinnerMini />}
+            {!isLoading ? "Log in with given credential" : <SpinnerMini />}
           </Button>
         </FormRowVertical>
       </Form>
       <p>
-        Since it is a internal management tool, users can be created inside the
-        application only. (hit login to enter the application with the given
-        email and password)
+        An internal hotel booking management tool for employees. New accounts
+        can only be created by an existing employee.
       </p>
     </>
   );
