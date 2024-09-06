@@ -123,6 +123,7 @@ function Uploader() {
     await deleteBookings();
     await createBookings();
     setIsLoading(false);
+    window.location.reload();
   }
 
   return (
@@ -143,7 +144,7 @@ function Uploader() {
       <h3>SAMPLE DATA</h3>
 
       <Button onClick={uploadBookings} disabled={isLoading}>
-        Upload bookings
+        upload Sample Data
       </Button>
     </div>
   );
